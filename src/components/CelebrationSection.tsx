@@ -11,7 +11,7 @@ const CelebrationSection = () => {
   }));
 
   return (
-    <section className="py-20 px-4 bg-gradient-hero relative overflow-hidden min-h-screen flex items-center justify-center">
+    <section className="py-12 px-4 bg-gradient-hero relative overflow-hidden min-h-[60vh] flex items-center justify-center">
       {/* Animated Background Elements */}
       <div className="absolute inset-0">
         {/* Fireworks */}
@@ -84,7 +84,7 @@ const CelebrationSection = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="mb-4 sm:mb-6"
+          className="mb-3 sm:mb-4"
         >
           <motion.h2
             animate={{ 
@@ -95,7 +95,7 @@ const CelebrationSection = () => {
               ]
             }}
             transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-            className="font-romantic text-2xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl font-bold text-white mb-3 sm:mb-4 leading-tight"
+            className="font-romantic text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-2 sm:mb-3 leading-tight"
           >
             Forever Begins
             <br />
@@ -107,7 +107,7 @@ const CelebrationSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
             viewport={{ once: true }}
-            className="text-base sm:text-lg md:text-xl lg:text-2xl text-pink-100 mb-4 sm:mb-6 leading-relaxed max-w-3xl mx-auto"
+            className="text-sm sm:text-base md:text-lg lg:text-xl text-pink-100 mb-3 sm:mb-4 leading-relaxed max-w-2xl mx-auto"
           >
             Here's to a lifetime of shared dreams, endless laughter, and a love that grows stronger with each passing day
           </motion.p>
@@ -119,12 +119,12 @@ const CelebrationSection = () => {
           whileInView={{ scale: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
           viewport={{ once: true }}
-          className="relative mb-4 sm:mb-6"
+          className="relative mb-3 sm:mb-4"
         >
           <motion.div
             animate={{ rotate: 360 }}
             transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
-            className="relative w-20 sm:w-24 md:w-32 h-20 sm:h-24 md:h-32 mx-auto"
+            className="relative w-16 sm:w-20 md:w-24 h-16 sm:h-20 md:h-24 mx-auto"
           >
             {Array.from({ length: 8 }, (_, i) => (
               <motion.div
@@ -137,7 +137,7 @@ const CelebrationSection = () => {
                   repeat: Infinity,
                   repeatDelay: 3
                 }}
-                className="absolute text-xl sm:text-2xl md:text-4xl text-pink-200"
+                className="absolute text-lg sm:text-xl md:text-2xl text-pink-200"
                 style={{
                   transform: `rotate(${i * 45}deg) translateY(-40px)`,
                   transformOrigin: 'center 40px'
@@ -155,9 +155,9 @@ const CelebrationSection = () => {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1 }}
           viewport={{ once: true }}
-          className="mt-4 sm:mt-6 p-4 sm:p-6 md:p-8 bg-white/10 backdrop-blur-sm rounded-2xl sm:rounded-3xl border border-white/20"
+          className="mt-3 sm:mt-4 p-3 sm:p-4 md:p-6 bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl border border-white/20"
         >
-          <p className="font-romantic text-lg sm:text-xl md:text-2xl lg:text-3xl text-pink-100 italic leading-relaxed">
+          <p className="font-romantic text-base sm:text-lg md:text-xl lg:text-2xl text-pink-100 italic leading-relaxed">
             "Being deeply loved by someone gives you strength,
             <br className="hidden sm:block" />
             <span className="sm:hidden"> </span>
